@@ -92,8 +92,7 @@ export default function Index() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3 animate-fade-in">
-              <img src="https://cdn.poehali.dev/files/logoza.ru.png" alt="Cookies Ink" className="h-10 w-10 object-contain" />
-              <span className="text-2xl font-bold text-primary">Cookies Ink</span>
+              <img src="https://cdn.poehali.dev/files/logoza.ru (2).png" alt="Cookies Ink" className="h-12 object-contain" />
             </div>
             <div className="hidden md:flex gap-6">
               {['home', 'services', 'about', 'testimonials', 'contacts'].map((section) => (
@@ -380,8 +379,7 @@ export default function Index() {
       <footer className="py-8 px-4 border-t border-border bg-card">
         <div className="container mx-auto text-center">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <img src="https://cdn.poehali.dev/files/logoza.ru.png" alt="Cookies Ink" className="h-8 w-8 object-contain" />
-            <span className="text-xl font-bold text-primary">Cookies Ink</span>
+            <img src="https://cdn.poehali.dev/files/logoza.ru (2).png" alt="Cookies Ink" className="h-10 object-contain" />
           </div>
           <p className="text-muted-foreground text-sm mb-2">
             Делаем компьютеры как выпекающие печеньки
