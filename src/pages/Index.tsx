@@ -91,8 +91,8 @@ export default function Index() {
       <nav className="fixed top-0 w-full bg-card/80 backdrop-blur-md border-b border-border z-50 shadow-sm">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2 animate-fade-in">
-              <span className="text-3xl animate-float">🍪</span>
+            <div className="flex items-center gap-3 animate-fade-in">
+              <img src="https://cdn.poehali.dev/files/logoza.ru.png" alt="Cookies Ink" className="h-10 w-10 object-contain" />
               <span className="text-2xl font-bold text-primary">Cookies Ink</span>
             </div>
             <div className="hidden md:flex gap-6">
@@ -347,25 +347,40 @@ export default function Index() {
               </CardContent>
             </Card>
           </div>
-          <Card className="bg-gradient-to-r from-primary/10 to-secondary/10 border-2 animate-scale-in">
-            <CardContent className="pt-6">
-              <p className="text-lg mb-4">
-                <strong>График работы:</strong>
-              </p>
-              <p className="text-muted-foreground mb-2">Пн-Пт: 10:00 - 20:00</p>
-              <p className="text-muted-foreground mb-2">Сб-Вс: 11:00 - 18:00</p>
-              <p className="text-sm text-muted-foreground mt-4">
-                📍 Москва, ул. Компьютерная, д. 42
-              </p>
-            </CardContent>
-          </Card>
+          <div className="grid md:grid-cols-2 gap-6 mt-8">
+            <Card className="bg-gradient-to-r from-primary/10 to-secondary/10 border-2 animate-scale-in">
+              <CardContent className="pt-6">
+                <p className="text-lg mb-4">
+                  <strong>График работы:</strong>
+                </p>
+                <p className="text-muted-foreground mb-2">Пн-Пт: 10:00 - 20:00</p>
+                <p className="text-muted-foreground mb-2">Сб-Вс: 11:00 - 18:00</p>
+                <p className="text-sm text-muted-foreground mt-4 flex items-center gap-2">
+                  <Icon name="MapPin" size={16} className="text-primary" />
+                  Москва, ул. Компьютерная, д. 42
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="overflow-hidden animate-scale-in" style={{ animationDelay: '150ms' }}>
+              <CardContent className="p-0">
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=37.617635,55.755819&z=16&l=map&pt=37.617635,55.755819,pm2rdm"
+                  width="100%"
+                  height="280"
+                  frameBorder="0"
+                  className="w-full"
+                  title="Наше местоположение"
+                ></iframe>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 
       <footer className="py-8 px-4 border-t border-border bg-card">
         <div className="container mx-auto text-center">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <span className="text-2xl">🍪</span>
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <img src="https://cdn.poehali.dev/files/logoza.ru.png" alt="Cookies Ink" className="h-8 w-8 object-contain" />
             <span className="text-xl font-bold text-primary">Cookies Ink</span>
           </div>
           <p className="text-muted-foreground text-sm mb-2">
